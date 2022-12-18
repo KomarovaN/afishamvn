@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.domain.AfishaManagerTest" time="0.089" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.domain.AfishaManagerTest" time="0.113" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\Asus\.jdks\corretto-11.0.17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire12050582899631658813\surefirebooter16513011364083084696.jar C:\Users\Asus\AppData\Local\Temp\surefire12050582899631658813 2022-12-19T01-25-11_457-jvmRun1 surefire10044651666177778392tmp surefire_011102967393919030351tmp"/>
+    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire15935575854825753105\surefirebooter8473044335882979112.jar C:\Users\Asus\AppData\Local\Temp\surefire15935575854825753105 2022-12-19T01-36-51_158-jvmRun1 surefire5982573684916167210tmp surefire_08691981224004650367tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Asus\IdeaProjects\afishamvn\target\test-classes;C:\Users\Asus\IdeaProjects\afishamvn\target\classes;C:\Users\Asus\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\Asus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Asus\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Asus\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Asus\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Asus\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\Asus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\Asus\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire12050582899631658813\surefirebooter16513011364083084696.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire15935575854825753105\surefirebooter8473044335882979112.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.17+8-LTS"/>
@@ -61,15 +61,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldNew" classname="ru.netology.domain.AfishaManagerTest" time="0.055"/>
+  <testcase name="shouldNew" classname="ru.netology.domain.AfishaManagerTest" time="0.064"/>
   <testcase name="shouldFindLastWithParameterMoreDefault" classname="ru.netology.domain.AfishaManagerTest" time="0"/>
-  <testcase name="shouldAddItemsToNull" classname="ru.netology.domain.AfishaManagerTest" time="0.001"/>
-  <testcase name="shouldAddItem" classname="ru.netology.domain.AfishaManagerTest" time="0.001"/>
+  <testcase name="shouldAddItemsToNull" classname="ru.netology.domain.AfishaManagerTest" time="0.002"/>
+  <testcase name="shouldAddItem" classname="ru.netology.domain.AfishaManagerTest" time="0.004"/>
   <testcase name="shouldFindLastWithParameterLessDefault" classname="ru.netology.domain.AfishaManagerTest" time="0"/>
-  <testcase name="shouldFindLastEqualsDefault" classname="ru.netology.domain.AfishaManagerTest" time="0.001"/>
+  <testcase name="shouldFindLastEqualsDefault" classname="ru.netology.domain.AfishaManagerTest" time="0"/>
   <testcase name="shouldAddItemsToItems" classname="ru.netology.domain.AfishaManagerTest" time="0.001"/>
-  <testcase name="shouldFindLastMoreDefault" classname="ru.netology.domain.AfishaManagerTest" time="0.001"/>
-  <testcase name="shouldFindLastWithParameterEqualsDefault" classname="ru.netology.domain.AfishaManagerTest" time="0.001"/>
+  <testcase name="shouldFindLastMoreDefault" classname="ru.netology.domain.AfishaManagerTest" time="0"/>
+  <testcase name="shouldFindLastWithParameterEqualsDefault" classname="ru.netology.domain.AfishaManagerTest" time="0"/>
   <testcase name="shouldFindLastLessDefault" classname="ru.netology.domain.AfishaManagerTest" time="0.001"/>
   <testcase name="shouldNewWithParameter" classname="ru.netology.domain.AfishaManagerTest" time="0.001"/>
 </testsuite>

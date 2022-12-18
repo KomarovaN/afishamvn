@@ -41,15 +41,14 @@ public class AfishaManager {
         int resultLength;
 <span class="fc bfc" id="L42" title="All 2 branches covered.">        if (items.length &lt; maxLimitLast) {</span>
 <span class="fc" id="L43">            resultLength = items.length;</span>
+        } else {
+<span class="fc" id="L45">            resultLength = maxLimitLast;</span>
         }
-        else {
-<span class="fc" id="L46">            resultLength = maxLimitLast;</span>
+<span class="fc" id="L47">        String[] lasted = new String[resultLength];</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        for (int i = 0; i &lt; lasted.length; i++) {</span>
+<span class="fc" id="L49">            lasted[i] = items[items.length - 1 - i];</span>
         }
-<span class="fc" id="L48">        String[] lasted = new String[resultLength];</span>
-<span class="fc bfc" id="L49" title="All 2 branches covered.">        for (int i = 0; i &lt; lasted.length; i++) {</span>
-<span class="fc" id="L50">            lasted[i] = items[items.length - 1 - i];</span>
-        }
-<span class="fc" id="L52">        return lasted;</span>
+<span class="fc" id="L51">        return lasted;</span>
     }
 
 }
