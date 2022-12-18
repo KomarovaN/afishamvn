@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AfishaManager.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">afishamvn</a> &gt; <a href="index.source.html" class="el_package">ru.netology.domain</a> &gt; <span class="el_source">AfishaManager.java</span></div><h1>AfishaManager.java</h1><pre class="source lang-java linenums">package ru.netology.domain;
+
+public class AfishaManager {
+<span class="fc" id="L4">    private String[] items = new String[0];</span>
+<span class="fc" id="L5">    private int maxLimitLast = 10;</span>
+
+<span class="fc" id="L7">    public AfishaManager() {</span>
+<span class="fc" id="L8">    }</span>
+
+<span class="fc" id="L10">    public AfishaManager(int maxLimitLast) {</span>
+<span class="fc" id="L11">        this.maxLimitLast = maxLimitLast;</span>
+<span class="fc" id="L12">    }</span>
+
+    public void addItem(String item) {
+<span class="fc" id="L15">        String[] tmp = new String[items.length + 1];</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        for (int i = 0; i &lt; items.length; i++) {</span>
+<span class="fc" id="L17">            tmp[i] = items[i];</span>
+        }
+<span class="fc" id="L19">        tmp[tmp.length - 1] = item;</span>
+<span class="fc" id="L20">        items = tmp;</span>
+<span class="fc" id="L21">    }</span>
+
+    public void addItems(String[] items) {
+<span class="fc" id="L24">        String[] tmp = new String[this.items.length + items.length];</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">        for (int i = 0; i &lt; this.items.length; i++) {</span>
+<span class="fc" id="L26">            tmp[i] = this.items[i];</span>
+        }
+<span class="fc" id="L28">        int j = this.items.length;</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        for (int i = 0; i &lt; items.length; i++) {</span>
+<span class="fc" id="L30">            tmp[j] = items[i];</span>
+<span class="fc" id="L31">            j++;</span>
+        }
+<span class="fc" id="L33">        this.items = tmp;</span>
+<span class="fc" id="L34">    }</span>
+
+    public String[] findAll() {
+<span class="fc" id="L37">        return this.items;</span>
+    }
+
+    public String[] findLast() {
+        int resultLength;
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        if (items.length &lt; maxLimitLast) {</span>
+<span class="fc" id="L43">            resultLength = items.length;</span>
+        }
+        else {
+<span class="fc" id="L46">            resultLength = maxLimitLast;</span>
+        }
+<span class="fc" id="L48">        String[] lasted = new String[resultLength];</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        for (int i = 0; i &lt; lasted.length; i++) {</span>
+<span class="fc" id="L50">            lasted[i] = items[items.length - 1 - i];</span>
+        }
+<span class="fc" id="L52">        return lasted;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
